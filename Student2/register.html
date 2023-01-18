@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.center{
+color:red;
+}
+</style>
+</head>
+<body>
+<div align="center">
+<h1>Student Details Added Here</h1>
+<form action="StudentServlet" method="post">
+<table style="with: 80%">
+<tr>
+<td>Name</td>
+<td><input type="text" name="Name" required/></td>
+</tr>
+<tr>
+<td>RollNumber</td>
+<td><input type="text" name="RollNumber" required/></td>
+</tr>
+<tr>
+<td >Standard</td>
+<td><select name="Standard" id="Standard" type="dropdown" required >
+  <option value="First">First</option>
+  <option value="Second">Second</option>
+  <option value="Third">Third</option>
+  <option value="Fourth">Fourth</option>
+  <option value="Fifth">Fifth</option>
+  <option value="Sixth">Sixth</option>
+  <option value="Seventh">Seventh</option>
+  <option value="Eigth">Eigth</option>
+  <option value="Nineth">Nineth</option>
+  <option value="Tenth">Tenth</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="Gender" value="male" required/>Male
+<input type="radio" name="Gender" value="female" required/>Female
+</td>
+</tr>
+<tr>
+<td>DateofBirth</td>
+<td><input type="date" name="DateofBirth" required/>
+  </td>
+</tr>
+<tr>
+<td>BloodGroup</td>
+<td><input type="text" name="BloodGroup" required></td>
+</tr>
+<tr>
+<td>FatherName</td>
+<td><input type="text" name="FatherName" required></td>
+</tr>
+<tr>
+<td>MotherName</td>
+<td><input type="text" name="MotherName" required></td>
+</tr>
+<tr>
+<td>FatherOccupation</td>
+<td><input type="text" name="FatherOccupation" required></td>
+</tr>
+<tr>
+<td>MotherOccupation</td>
+<td><input type="text" name="MotherOccupation" required></td>
+</tr>
+<tr>
+<td>MobileNumber</td>
+<td><input type="text" name="MobileNumber" pattern="[6789][0-9]{9}" title="Please enter valid phone number" required/></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><input type="text" name="Address" required/></td>
+</tr>
+</table>
+<input type="submit" value="Add Student"/>
+</form>
+</div>
+<div class="content">
+    <div class="cta"><a href="http://localhost:8080/Student2/Marks.html"></a></div>
+    </div>
+</body>
+</html>
