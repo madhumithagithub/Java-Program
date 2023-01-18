@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<body>
+<div align="center">
+<h1>Student Marks Added Here</h1>
+<form action="Studentdetails" method="post">
+<table style="with: 80%">
+<tr>
+<td>RollNumber</td>
+<td><input type="text" name="RollNumber"/></td>
+</tr>
+<tr>
+<td>Tamil</td>
+<td><input type="number" name="Tamil" min="1" max="100" title="Enter the range in 1 to 100 Marks" required/></td>
+</tr>
+<tr>
+<td>English</td>
+<td><input type="number" name="English" min="0" max ="100" title="Enter the range in 1 to 100 Marks" required/></td>
+</tr>
+<tr>
+<td>Maths</td>
+<td><input type="number" name="Maths" min="0" max="100" title="Enter the range in 1 to 100 Marks" required/></td>
+</tr>
+<tr>
+<td>science</td>
+<td><input type="number" name="science" min="0" max="100" title="Enter the range in 1 to 100 Marks" required/></td>
+</tr>
+<tr>
+<td>socialscience</td>
+<td><input type="number" name="socialscience" min="0" max="100" title="Enter the range in 1 to 100 Marks" required/></td>
+</tr>
+<tr>
+<td>Term</td>
+<td><select name="Term" id="Term" type="dropdown" required >
+  <option value="Ouarterly">Ouarterly</option>
+  <option value="Halfly">Halfly</option>
+  <option value="Annual">Annual</option>
+  </td>
+</tr>
+</table>
+<input type="submit" value="Add Marks"/>
+</form>
+</div>
+</body>
+</html>
